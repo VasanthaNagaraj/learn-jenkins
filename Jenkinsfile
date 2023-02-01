@@ -1,6 +1,5 @@
 pipeline {
     agent vasantha
-
     stages 
     {
         stage('Build') 
