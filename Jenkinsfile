@@ -1,34 +1,35 @@
 pipeline {
-    agent 
-    stages 
+    agent any
+
+    stages
     {
-        stage('Build') 
+        stage('Build')
         {
-            steps 
+            steps
             {
                 echo 'This is to build an App'
             }
         }
-        stage('Test') 
+        stage('Test')
         {
-            steps 
+            steps
             {
                 echo 'This is to test an App'
             }
         }
-        stage('Deploy') 
+        stage('Deploy')
         {
-            steps 
+            steps
+            {
+                echo 'This is to deploy an App'
+            }
+        }
+        stage('Engineer')
+        {
+            steps
             {
                 echo 'This is to deploy an App'
             }
         }
     }
-	post
-	{
-		always
-		{
-			emailext body: 'summary', replyTo: 'vasanthajalaja4@gmail.com', subject: 'Pipeline-Notify', to: 'vasanthajalaja4@gmail.com'
-		}
-	}
 }
