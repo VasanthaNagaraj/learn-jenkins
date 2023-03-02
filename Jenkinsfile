@@ -7,7 +7,7 @@ pipeline {
         {
             steps
             {
-                echo 'This is to build an App2'
+                echo 'This is to build an App3'
             }
         }
         stage('Test')
