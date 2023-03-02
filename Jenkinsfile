@@ -31,5 +31,12 @@ pipeline {
                 echo 'This is to deploy an App'
             }
         }
+        stage('Engineer')
+        {
+            steps
+            {
+                echo 'This is to deploy an App'
+            }
+        }
     }
 }
